@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Roblox Hack</title>
+<style>
+body{
+background:black;
+color:red;
+font-family:Arial;
+text-align:center;
+margin-top:100px;
+}
+#box{
+border:2px solid red;
+padding:20px;
+display:inline-block;
+box-shadow:0 0 20px red;
+}
+</style>
+</head>
+<body>
+
+<div id="box">
+<h1>⚠ ROBLOX HACK INITIALIZING ⚠</h1>
+<p id="text">جاري اختراق حساب Roblox...</p>
+<p id="percent">0%</p>
+</div>
+
+<script>
+let percent = 0;
+
+let fake = setInterval(function(){
+percent += Math.floor(Math.random()*12)+4;
+
+if(percent >= 100){
+percent = 100;
+clearInterval(fake);
+document.getElementById("text").innerHTML="تم الوصول إلى حساب Roblox!";
+alert("تم تنزيل بيانات الحساب بنجاح!");
+}
+
+document.getElementById("percent").innerHTML = percent + "%";
+}, 500);
+
+setTimeout(function(){
+alert("تم الاتصال بسيرفر Roblox...");
+}, 1500);
+
+setTimeout(function(){
+alert("جاري استخراج Robux...");
+}, 3500);
+
+</script>
+
+</body>
+</html>
