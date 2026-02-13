@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+
+<style>
+body{
+margin:0;
+background:black;
+color:#00ffff;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+flex-direction:column;
+}
+
+#logo{
+font-size:50px;
+text-shadow:0 0 20px #00ffff;
+margin-bottom:30px;
+}
+
+button{
+padding:15px 40px;
+font-size:20px;
+background:#00ffff;
+color:black;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div id="logo">WELCOME</div>
+
+<button onclick="repeat()">OK</button>
+
+<script>
+
+function repeat(){
+
+let texts = [
+"تم تهكيرك",
+"مابتهرب",
+"تبي تهرب؟",
+"لا ماتهرب",
+"امزح معك الحين تروح😂"
+];
+
+let random = texts[Math.floor(Math.random()*texts.length)];
+
+document.getElementById("logo").innerHTML = random;
+
+}
+
+</script>
+
+</body>
+</html>
